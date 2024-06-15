@@ -1,0 +1,27 @@
+.item {
+  max-width: 30rem;
+  margin: 0.5rem auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.3rem 0;
+}
+
+.item__text {
+  flex: 1;
+  overflow: auto;
+}
+
+.item__delete {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.item__checkbox {
+  border-radius: 100%;
+}
+
+.item__checkbox:checked ~ .item__text {
+  text-decoration: line-through;
+}

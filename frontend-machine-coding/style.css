@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 1rem;
+}
+
+h1 {
+  padding: 1rem;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 1rem;
+}
+
+li::before {
+  content: "👉 ";
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: black;
+}

@@ -1,0 +1,28 @@
+.kanban-board {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.add-column {
+  height: 2rem;
+  width: 2rem;
+  padding: 1.5rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+.is-dragging {
+  scale: 1.05;
+  background-color: rgb(50, 50, 50) !important;
+  color: white;
+}

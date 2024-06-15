@@ -1,0 +1,20 @@
+@import url("./components/Kanban/kanban.styles.css");
+@import url("./components/Column/column.styles.css");
+@import url("./components/Task/task.styles.css");
+@import url("./components/Overlay/overlay.styles.css");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(86, 86, 86);
+  width: 100%;
+  height: 100vh;
+  user-select: none;
+}

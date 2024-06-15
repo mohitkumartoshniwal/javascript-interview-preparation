@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.carousel-container > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  opacity: 0;
+  transition: 200ms opacity ease;
+}
+
+.carousel-container > img.active {
+  opacity: 1;
+}
+
+.carousel-container > button {
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  top: 50%;
+  cursor: pointer;
+}
+
+.carousel-container > button.prev {
+  left: 1rem;
+}
+
+.carousel-container > button.next {
+  right: 1rem;
+}

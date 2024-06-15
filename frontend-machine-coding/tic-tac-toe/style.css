@@ -1,0 +1,39 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  gap: 1rem;
+  background: #a8ff78; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #78ffd6,
+    #a8ff78
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #78ffd6,
+    #a8ff78
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.cell {
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  background-color: white;
+}
+
+.cellX {
+  font-size: 3rem;
+  color: orange;
+  text-align: center;
+}
+
+.cellO {
+  font-size: 3rem;
+  color: orange;
+  text-align: center;
+}

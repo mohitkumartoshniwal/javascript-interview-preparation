@@ -1,0 +1,30 @@
+.task {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 2%;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: move;
+  width: 15rem;
+}
+
+.task-input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 2%;
+  border: none;
+  background-color: rgb(239 239 239 / 60%);
+  resize: none;
+  width: 100%;
+  overflow: auto;
+  cursor: not-allowed;
+}
+
+.delete-task {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

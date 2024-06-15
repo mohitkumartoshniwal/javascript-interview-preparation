@@ -1,0 +1,30 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.tabs-header {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.tabs-header > * {
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.active[data-tab-header] {
+  background-color: #2196f3;
+}
+
+[data-tab-header]:hover {
+  background-color: #2196f3;
+}

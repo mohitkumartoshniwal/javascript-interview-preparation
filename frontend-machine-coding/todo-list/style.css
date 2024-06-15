@@ -1,0 +1,28 @@
+@import url("./components/ItemsContainer/items_container.style.css");
+@import url("./components/AddItem/add_item.style.css");
+@import url("./components/Item/item.style.css");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  user-select: none;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  padding: 1rem;
+  background-color: mediumpurple;
+}
+
+.todo-list {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  max-width: 28rem;
+  margin: 0 auto;
+}
