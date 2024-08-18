@@ -2,7 +2,9 @@
  * @see https://leetcode.com/problems/subsets/
  */
 
-// TC O(2^N)
+// TC O(2^N * N)
+// Picking and not picking will make 2^N and copying for the base case would make N
+
 /**
  * @param {number[]} nums
  * @return {number[][]}
