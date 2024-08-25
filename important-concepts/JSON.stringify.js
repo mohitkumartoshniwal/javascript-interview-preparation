@@ -169,6 +169,17 @@ const mixedNested = {
 console.log(stringify(mixedNested)); // Expected: '{"a":[1,{"b":[2,{"c":3}]}],"d":{"e":"text","f":[4,5]}}'
 console.log(stringify(mixedNested) === JSON.stringify(mixedNested)); // Expected: true
 
+// Example 6: BigInt test case
+const bigIntObject = {
+  big: BigInt(12345678901234567890),
+  small: BigInt(1),
+};
+try {
+  console.log(stringify(bigIntObject)); // Expected: Error thrown
+} catch (e) {
+  console.log(e.message); // Expected: 'TypeError: Do not know how to serialize a BigInt'
+}
+
 // EDGE CASE TODO
 console.log(stringify([undefined, function () {}, Symbol("test")])); // Expected: '[null,null,null]'
 console.log(
