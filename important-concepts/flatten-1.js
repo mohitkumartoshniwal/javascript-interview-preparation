@@ -23,8 +23,8 @@ function flattenRecursive(arr, depth = 1) {
   return result;
 }
 
-// console.log(flattenRecursive(arr, 1));
-// console.log(flattenRecursive(arr, 2));
+// console.log(flattenRecursive(arr, 1)); // [1, 2, 3, [4]]
+// console.log(flattenRecursive(arr, 2)); // [1, 2, 3, 4]
 
 // Recursive
 function flattenStack(arr, depth = 1) {
