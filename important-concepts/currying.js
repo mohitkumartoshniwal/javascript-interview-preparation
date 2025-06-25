@@ -19,3 +19,28 @@ console.log(curriedAdd(1)(2, 3));
 console.log(curriedAdd(1)(2)(3));
 console.log(curriedAdd(1, 2));
 console.log(curriedAdd(1)(2, 3, 4, 5));
+
+// Another way
+const curriedAdd2 = curry2(add);
+console.log(curriedAdd2(1, 2, 3)());
+console.log(curriedAdd2(1, 2)(3)());
+console.log(curriedAdd2(1)(2, 3)());
+console.log(curriedAdd2(1)(2)(3)());
+console.log(curriedAdd2(1, 2)(3)());
+console.log(curriedAdd2(1)(2, 3, 4, 5)());
+
+
+
+function curry2 (fn) { 
+  function curried(...args){
+    function next(...nextArgs){
+      if(nextArgs.length === 0){
+        return fn(...args)
+      } else {
+        return curried(...args,...nextArgs)
+      }
+    }
+    return next
+  }
+  return curried
+}
