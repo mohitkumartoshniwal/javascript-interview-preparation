@@ -6,6 +6,9 @@ function wrap(arr) {
       if (index < 0) {
         index += target.length;
         // TODO use refelect later
+          if (index < 0) {
+            throw new Error("Index out of bounds");
+          }
         return target[index];
       }
       return target[index];
