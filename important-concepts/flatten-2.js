@@ -19,3 +19,7 @@ const obj1 = {
 };
 
 console.log(flatten(obj1));
+// {
+//   a: 1,
+//   c: 3
+// }
